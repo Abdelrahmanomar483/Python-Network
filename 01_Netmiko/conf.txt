@@ -1,0 +1,6 @@
+int lo0
+ip addr 2.2.2.2 255.255.255.255
+exit
+vlan 10 
+name test
+do sh vlan

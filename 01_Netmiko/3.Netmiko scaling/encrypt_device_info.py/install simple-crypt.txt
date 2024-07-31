@@ -1,0 +1,6 @@
+#You will need to install software first
+#=======================================
+
+apt-get install python3-pip
+pip3 install -U netmiko
+pip3 install simple-crypt

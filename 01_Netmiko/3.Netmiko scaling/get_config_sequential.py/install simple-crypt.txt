@@ -1,0 +1,4 @@
+#You will need to install software first
+#=======================================
+
+pip3 install simple-crypt

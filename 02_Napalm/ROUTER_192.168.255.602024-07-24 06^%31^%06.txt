@@ -1,0 +1,801 @@
+{
+    "fqdn": "Switch.NETWORKLESSONS.LOCAL",
+    "hostname": "Switch",
+    "interface_list": [
+        "GigabitEthernet0/0",
+        "GigabitEthernet0/1",
+        "GigabitEthernet0/2",
+        "GigabitEthernet0/3",
+        "GigabitEthernet1/0",
+        "GigabitEthernet1/1",
+        "GigabitEthernet1/2",
+        "GigabitEthernet1/3",
+        "Loopback0",
+        "Loopback1",
+        "Loopback2",
+        "Loopback3",
+        "Loopback4",
+        "Loopback5",
+        "Loopback6",
+        "Loopback7",
+        "Loopback8",
+        "Loopback9",
+        "Loopback10",
+        "Loopback11",
+        "Loopback12",
+        "Loopback13",
+        "Loopback14",
+        "Loopback15",
+        "Loopback16",
+        "Loopback17",
+        "Loopback18",
+        "Loopback19",
+        "Loopback20"
+    ],
+    "model": "IOSv",
+    "os_version": "vios_l2 Software (vios_l2-ADVENTERPRISEK9-M), Version 15.2(CML_NIGHTLY_20180510)FLO_DSGS7, EARLY DEPLOYMENT DEVELOPMENT BUILD, synced to  V152_6_0_81_E",
+    "serial_number": "9L3XBPKQGTL",
+    "uptime": 2220.0,
+    "vendor": "Cisco"
+}[
+    {
+        "age": 0.0,
+        "interface": "GigabitEthernet0/0",
+        "ip": "192.168.255.1",
+        "mac": "00:50:56:C0:00:00"
+    },
+    {
+        "age": 4.0,
+        "interface": "GigabitEthernet0/0",
+        "ip": "192.168.255.2",
+        "mac": "00:50:56:FD:A9:5C"
+    },
+    {
+        "age": 0.0,
+        "interface": "GigabitEthernet0/0",
+        "ip": "192.168.255.50",
+        "mac": "50:00:00:07:00:00"
+    },
+    {
+        "age": -1.0,
+        "interface": "GigabitEthernet0/0",
+        "ip": "192.168.255.60",
+        "mac": "50:00:00:08:00:00"
+    },
+    {
+        "age": 37.0,
+        "interface": "GigabitEthernet0/0",
+        "ip": "192.168.255.128",
+        "mac": "00:0C:29:A8:81:05"
+    },
+    {
+        "age": 5.0,
+        "interface": "GigabitEthernet0/0",
+        "ip": "192.168.255.130",
+        "mac": "00:0C:29:44:15:43"
+    }
+]{
+    "candidate": "",
+    "running": "!\n\n!\nversion 15.2\nservice timestamps debug datetime msec\nservice timestamps log datetime msec\nno service password-encryption\nservice compress-config\n!\nhostname Switch\n!\nboot-start-marker\nboot-end-marker\n!\n!\nenable secret 5 $1$UNX6$kJ7y3VD8O5LW3wx.Vo7f30\n!\nusername admin privilege 15 password 0 admin\nno aaa new-model\n!\n!\n!\n!\n!\n!\n!\n!\nip domain-name NETWORKLESSONS.LOCAL\nip cef\nno ipv6 cef\n!\n!\nfile prompt quiet\narchive\n path flash:\n!\nspanning-tree mode pvst\nspanning-tree extend system-id\n!\n!\n! \n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\ninterface Loopback0\n ip address 2.2.2.2 255.255.255.255\n!\ninterface Loopback1\n ip address 10.10.1.1 255.255.255.0\n!\ninterface Loopback2\n ip address 3.3.3.3 255.255.255.255\n!\ninterface Loopback3\n ip address 10.10.3.1 255.255.255.0\n!\ninterface Loopback4\n ip address 10.10.4.1 255.255.255.0\n!\ninterface Loopback5\n ip address 10.10.5.1 255.255.255.0\n!\ninterface Loopback6\n ip address 10.10.6.1 255.255.255.0\n!\ninterface Loopback7\n ip address 10.10.7.1 255.255.255.0\n!\ninterface Loopback8\n ip address 10.10.8.1 255.255.255.0\n!\ninterface Loopback9\n ip address 10.10.9.1 255.255.255.0\n!\ninterface Loopback10\n ip address 10.10.10.1 255.255.255.0\n!\ninterface Loopback11\n ip address 10.10.11.1 255.255.255.0\n!\ninterface Loopback12\n ip address 10.10.12.1 255.255.255.0\n!\ninterface Loopback13\n ip address 10.10.13.1 255.255.255.0\n!\ninterface Loopback14\n ip address 10.10.14.1 255.255.255.0\n!\ninterface Loopback15\n ip address 10.10.15.1 255.255.255.0\n!\ninterface Loopback16\n ip address 10.10.16.1 255.255.255.0\n!\ninterface Loopback17\n ip address 10.10.17.1 255.255.255.0\n!\ninterface Loopback18\n ip address 10.10.18.1 255.255.255.0\n!\ninterface Loopback19\n ip address 10.10.19.1 255.255.255.0\n!\ninterface Loopback20\n ip address 10.10.20.1 255.255.255.0\n!\ninterface GigabitEthernet0/0\n no switchport\n ip address 192.168.255.60 255.255.255.0\n negotiation auto\n!\ninterface GigabitEthernet0/1\n negotiation auto\n!\ninterface GigabitEthernet0/2\n negotiation auto\n!\ninterface GigabitEthernet0/3\n negotiation auto\n!\ninterface GigabitEthernet1/0\n negotiation auto\n!\ninterface GigabitEthernet1/1\n negotiation auto\n!\ninterface GigabitEthernet1/2\n negotiation auto\n!\ninterface GigabitEthernet1/3\n negotiation auto\n!\nrouter bgp 1\n bgp log-neighbor-changes\n neighbor 192.168.255.50 remote-as 1\n!\nip forward-protocol nd\n!\nip http server\n!\nip route 0.0.0.0 0.0.0.0 192.168.255.130\nip route 0.0.0.0 0.0.0.0 192.168.255.128\nip route 0.0.0.0 0.0.0.0 192.168.255.1\nip route 0.0.0.0 0.0.0.0 192.168.255.2\nip ssh server algorithm encryption aes128-ctr aes192-ctr aes256-ctr\nip ssh client algorithm encryption aes128-ctr aes192-ctr aes256-ctr\nip scp server enable\n!\n!\n!\n!\n!\n!\ncontrol-plane\n!\nbanner exec ^C\nIOSv - Cisco Systems Confidential -\n\nSupplemental End User License Restrictions\n\nThis IOSv software is provided AS-IS without warranty of any kind. Under no circumstances may this software be used separate from the Cisco Modeling Labs Software that this software was provided with, or deployed or used as part of a production environment.\n\nBy using the software, you agree to abide by the terms and conditions of the Cisco End User License Agreement at http://www.cisco.com/go/eula. Unauthorized use or distribution of this software is expressly prohibited.\n^C\nbanner incoming ^C\nIOSv - Cisco Systems Confidential -\n\nSupplemental End User License Restrictions\n\nThis IOSv software is provided AS-IS without warranty of any kind. Under no circumstances may this software be used separate from the Cisco Modeling Labs Software that this software was provided with, or deployed or used as part of a production environment.\n\nBy using the software, you agree to abide by the terms and conditions of the Cisco End User License Agreement at http://www.cisco.com/go/eula. Unauthorized use or distribution of this software is expressly prohibited.\n^C\nbanner login ^C\nIOSv - Cisco Systems Confidential -\n\nSupplemental End User License Restrictions\n\nThis IOSv software is provided AS-IS without warranty of any kind. Under no circumstances may this software be used separate from the Cisco Modeling Labs Software that this software was provided with, or deployed or used as part of a production environment.\n\nBy using the software, you agree to abide by the terms and conditions of the Cisco End User License Agreement at http://www.cisco.com/go/eula. Unauthorized use or distribution of this software is expressly prohibited.\n^C\n!\nline con 0\nline aux 0\nline vty 0 4\n login local\n transport input ssh\n!\n!\nend",
+    "startup": "Using 2331 out of 262144 bytes, uncompressed size = 4548 bytes\n!\n\n!\nversion 15.2\nservice timestamps debug datetime msec\nservice timestamps log datetime msec\nno service password-encryption\nservice compress-config\n!\nhostname Switch\n!\nboot-start-marker\nboot-end-marker\n!\n!\nenable secret 5 $1$UNX6$kJ7y3VD8O5LW3wx.Vo7f30\n!\nusername admin privilege 15 password 0 admin\nno aaa new-model\n!\n!\n!\n!\n!\n!\n!\n!\nip domain-name NETWORKLESSONS.LOCAL\nip cef\nno ipv6 cef\n!\n!\nfile prompt quiet\narchive\n path flash:\n!\nspanning-tree mode pvst\nspanning-tree extend system-id\n!\n!\n! \n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\ninterface Loopback0\n ip address 2.2.2.2 255.255.255.255\n!\ninterface Loopback1\n ip address 10.10.1.1 255.255.255.0\n!\ninterface Loopback2\n ip address 3.3.3.3 255.255.255.255\n!\ninterface Loopback3\n ip address 10.10.3.1 255.255.255.0\n!\ninterface Loopback4\n ip address 10.10.4.1 255.255.255.0\n!\ninterface Loopback5\n ip address 10.10.5.1 255.255.255.0\n!\ninterface Loopback6\n ip address 10.10.6.1 255.255.255.0\n!\ninterface Loopback7\n ip address 10.10.7.1 255.255.255.0\n!\ninterface Loopback8\n ip address 10.10.8.1 255.255.255.0\n!\ninterface Loopback9\n ip address 10.10.9.1 255.255.255.0\n!\ninterface Loopback10\n ip address 10.10.10.1 255.255.255.0\n!\ninterface Loopback11\n ip address 10.10.11.1 255.255.255.0\n!\ninterface Loopback12\n ip address 10.10.12.1 255.255.255.0\n!\ninterface Loopback13\n ip address 10.10.13.1 255.255.255.0\n!\ninterface Loopback14\n ip address 10.10.14.1 255.255.255.0\n!\ninterface Loopback15\n ip address 10.10.15.1 255.255.255.0\n!\ninterface Loopback16\n ip address 10.10.16.1 255.255.255.0\n!\ninterface Loopback17\n ip address 10.10.17.1 255.255.255.0\n!\ninterface Loopback18\n ip address 10.10.18.1 255.255.255.0\n!\ninterface Loopback19\n ip address 10.10.19.1 255.255.255.0\n!\ninterface Loopback20\n ip address 10.10.20.1 255.255.255.0\n!\ninterface GigabitEthernet0/0\n no switchport\n ip address 192.168.255.60 255.255.255.0\n negotiation auto\n!\ninterface GigabitEthernet0/1\n negotiation auto\n!\ninterface GigabitEthernet0/2\n negotiation auto\n!\ninterface GigabitEthernet0/3\n negotiation auto\n!\ninterface GigabitEthernet1/0\n negotiation auto\n!\ninterface GigabitEthernet1/1\n negotiation auto\n!\ninterface GigabitEthernet1/2\n negotiation auto\n!\ninterface GigabitEthernet1/3\n negotiation auto\n!\nrouter bgp 1\n bgp log-neighbor-changes\n neighbor 192.168.255.50 remote-as 1\n!\nip forward-protocol nd\n!\nip http server\n!\nip route 0.0.0.0 0.0.0.0 192.168.255.130\nip route 0.0.0.0 0.0.0.0 192.168.255.128\nip route 0.0.0.0 0.0.0.0 192.168.255.1\nip route 0.0.0.0 0.0.0.0 192.168.255.2\nip ssh server algorithm encryption aes128-ctr aes192-ctr aes256-ctr\nip ssh client algorithm encryption aes128-ctr aes192-ctr aes256-ctr\nip scp server enable\n!\n!\n!\n!\n!\n!\ncontrol-plane\n!\nbanner exec ^C\nIOSv - Cisco Systems Confidential -\n\nSupplemental End User License Restrictions\n\nThis IOSv software is provided AS-IS without warranty of any kind. Under no circumstances may this software be used separate from the Cisco Modeling Labs Software that this software was provided with, or deployed or used as part of a production environment.\n\nBy using the software, you agree to abide by the terms and conditions of the Cisco End User License Agreement at http://www.cisco.com/go/eula. Unauthorized use or distribution of this software is expressly prohibited.\n^C\nbanner incoming ^C\nIOSv - Cisco Systems Confidential -\n\nSupplemental End User License Restrictions\n\nThis IOSv software is provided AS-IS without warranty of any kind. Under no circumstances may this software be used separate from the Cisco Modeling Labs Software that this software was provided with, or deployed or used as part of a production environment.\n\nBy using the software, you agree to abide by the terms and conditions of the Cisco End User License Agreement at http://www.cisco.com/go/eula. Unauthorized use or distribution of this software is expressly prohibited.\n^C\nbanner login ^C\nIOSv - Cisco Systems Confidential -\n\nSupplemental End User License Restrictions\n\nThis IOSv software is provided AS-IS without warranty of any kind. Under no circumstances may this software be used separate from the Cisco Modeling Labs Software that this software was provided with, or deployed or used as part of a production environment.\n\nBy using the software, you agree to abide by the terms and conditions of the Cisco End User License Agreement at http://www.cisco.com/go/eula. Unauthorized use or distribution of this software is expressly prohibited.\n^C\n!\nline con 0\nline aux 0\nline vty 0 4\n login local\n transport input ssh\n!\n!\nend"
+}{
+    "global": {
+        "peers": {
+            "192.168.255.50": {
+                "address_family": {
+                    "ipv4 unicast": {
+                        "accepted_prefixes": 0,
+                        "received_prefixes": 0,
+                        "sent_prefixes": 0
+                    }
+                },
+                "description": "",
+                "is_enabled": true,
+                "is_up": true,
+                "local_as": 1,
+                "remote_as": 1,
+                "remote_id": "2.2.2.2",
+                "uptime": 2287
+            }
+        },
+        "router_id": "10.10.20.1"
+    }
+}{
+    "cpu": {
+        "0": {
+            "%usage": 18.0
+        }
+    },
+    "fans": {
+        "invalid": {
+            "status": true
+        }
+    },
+    "memory": {
+        "available_ram": 945902272,
+        "used_ram": 158641948
+    },
+    "power": {
+        "invalid": {
+            "capacity": -1.0,
+            "output": -1.0,
+            "status": true
+        }
+    },
+    "temperature": {
+        "invalid": {
+            "is_alert": false,
+            "is_critical": false,
+            "temperature": -1.0
+        }
+    }
+}{
+    "GigabitEthernet0/0": {
+        "description": "",
+        "is_enabled": true,
+        "is_up": true,
+        "last_flapped": -1.0,
+        "mac_address": "50:00:00:08:00:00",
+        "mtu": 1500,
+        "speed": 1000.0
+    },
+    "GigabitEthernet0/1": {
+        "description": "",
+        "is_enabled": true,
+        "is_up": true,
+        "last_flapped": -1.0,
+        "mac_address": "50:00:00:08:00:01",
+        "mtu": 1500,
+        "speed": 1000.0
+    },
+    "GigabitEthernet0/2": {
+        "description": "",
+        "is_enabled": true,
+        "is_up": true,
+        "last_flapped": -1.0,
+        "mac_address": "50:00:00:08:00:02",
+        "mtu": 1500,
+        "speed": 1000.0
+    },
+    "GigabitEthernet0/3": {
+        "description": "",
+        "is_enabled": true,
+        "is_up": true,
+        "last_flapped": -1.0,
+        "mac_address": "50:00:00:08:00:03",
+        "mtu": 1500,
+        "speed": 1000.0
+    },
+    "GigabitEthernet1/0": {
+        "description": "",
+        "is_enabled": true,
+        "is_up": true,
+        "last_flapped": -1.0,
+        "mac_address": "50:00:00:08:00:04",
+        "mtu": 1500,
+        "speed": 1000.0
+    },
+    "GigabitEthernet1/1": {
+        "description": "",
+        "is_enabled": true,
+        "is_up": true,
+        "last_flapped": -1.0,
+        "mac_address": "50:00:00:08:00:05",
+        "mtu": 1500,
+        "speed": 1000.0
+    },
+    "GigabitEthernet1/2": {
+        "description": "",
+        "is_enabled": true,
+        "is_up": true,
+        "last_flapped": -1.0,
+        "mac_address": "50:00:00:08:00:06",
+        "mtu": 1500,
+        "speed": 1000.0
+    },
+    "GigabitEthernet1/3": {
+        "description": "",
+        "is_enabled": true,
+        "is_up": true,
+        "last_flapped": -1.0,
+        "mac_address": "50:00:00:08:00:07",
+        "mtu": 1500,
+        "speed": 1000.0
+    },
+    "Loopback0": {
+        "description": "",
+        "is_enabled": true,
+        "is_up": true,
+        "last_flapped": -1.0,
+        "mac_address": "",
+        "mtu": 1514,
+        "speed": 8000.0
+    },
+    "Loopback1": {
+        "description": "",
+        "is_enabled": true,
+        "is_up": true,
+        "last_flapped": -1.0,
+        "mac_address": "",
+        "mtu": 1514,
+        "speed": 8000.0
+    },
+    "Loopback10": {
+        "description": "",
+        "is_enabled": true,
+        "is_up": true,
+        "last_flapped": -1.0,
+        "mac_address": "",
+        "mtu": 1514,
+        "speed": 8000.0
+    },
+    "Loopback11": {
+        "description": "",
+        "is_enabled": true,
+        "is_up": true,
+        "last_flapped": -1.0,
+        "mac_address": "",
+        "mtu": 1514,
+        "speed": 8000.0
+    },
+    "Loopback12": {
+        "description": "",
+        "is_enabled": true,
+        "is_up": true,
+        "last_flapped": -1.0,
+        "mac_address": "",
+        "mtu": 1514,
+        "speed": 8000.0
+    },
+    "Loopback13": {
+        "description": "",
+        "is_enabled": true,
+        "is_up": true,
+        "last_flapped": -1.0,
+        "mac_address": "",
+        "mtu": 1514,
+        "speed": 8000.0
+    },
+    "Loopback14": {
+        "description": "",
+        "is_enabled": true,
+        "is_up": true,
+        "last_flapped": -1.0,
+        "mac_address": "",
+        "mtu": 1514,
+        "speed": 8000.0
+    },
+    "Loopback15": {
+        "description": "",
+        "is_enabled": true,
+        "is_up": true,
+        "last_flapped": -1.0,
+        "mac_address": "",
+        "mtu": 1514,
+        "speed": 8000.0
+    },
+    "Loopback16": {
+        "description": "",
+        "is_enabled": true,
+        "is_up": true,
+        "last_flapped": -1.0,
+        "mac_address": "",
+        "mtu": 1514,
+        "speed": 8000.0
+    },
+    "Loopback17": {
+        "description": "",
+        "is_enabled": true,
+        "is_up": true,
+        "last_flapped": -1.0,
+        "mac_address": "",
+        "mtu": 1514,
+        "speed": 8000.0
+    },
+    "Loopback18": {
+        "description": "",
+        "is_enabled": true,
+        "is_up": true,
+        "last_flapped": -1.0,
+        "mac_address": "",
+        "mtu": 1514,
+        "speed": 8000.0
+    },
+    "Loopback19": {
+        "description": "",
+        "is_enabled": true,
+        "is_up": true,
+        "last_flapped": -1.0,
+        "mac_address": "",
+        "mtu": 1514,
+        "speed": 8000.0
+    },
+    "Loopback2": {
+        "description": "",
+        "is_enabled": true,
+        "is_up": true,
+        "last_flapped": -1.0,
+        "mac_address": "",
+        "mtu": 1514,
+        "speed": 8000.0
+    },
+    "Loopback20": {
+        "description": "",
+        "is_enabled": true,
+        "is_up": true,
+        "last_flapped": -1.0,
+        "mac_address": "",
+        "mtu": 1514,
+        "speed": 8000.0
+    },
+    "Loopback3": {
+        "description": "",
+        "is_enabled": true,
+        "is_up": true,
+        "last_flapped": -1.0,
+        "mac_address": "",
+        "mtu": 1514,
+        "speed": 8000.0
+    },
+    "Loopback4": {
+        "description": "",
+        "is_enabled": true,
+        "is_up": true,
+        "last_flapped": -1.0,
+        "mac_address": "",
+        "mtu": 1514,
+        "speed": 8000.0
+    },
+    "Loopback5": {
+        "description": "",
+        "is_enabled": true,
+        "is_up": true,
+        "last_flapped": -1.0,
+        "mac_address": "",
+        "mtu": 1514,
+        "speed": 8000.0
+    },
+    "Loopback6": {
+        "description": "",
+        "is_enabled": true,
+        "is_up": true,
+        "last_flapped": -1.0,
+        "mac_address": "",
+        "mtu": 1514,
+        "speed": 8000.0
+    },
+    "Loopback7": {
+        "description": "",
+        "is_enabled": true,
+        "is_up": true,
+        "last_flapped": -1.0,
+        "mac_address": "",
+        "mtu": 1514,
+        "speed": 8000.0
+    },
+    "Loopback8": {
+        "description": "",
+        "is_enabled": true,
+        "is_up": true,
+        "last_flapped": -1.0,
+        "mac_address": "",
+        "mtu": 1514,
+        "speed": 8000.0
+    },
+    "Loopback9": {
+        "description": "",
+        "is_enabled": true,
+        "is_up": true,
+        "last_flapped": -1.0,
+        "mac_address": "",
+        "mtu": 1514,
+        "speed": 8000.0
+    }
+}{
+    "GigabitEthernet0/0": {
+        "rx_broadcast_packets": 555,
+        "rx_discards": 0,
+        "rx_errors": 0,
+        "rx_multicast_packets": 0,
+        "rx_octets": 284255,
+        "rx_unicast_packets": 3884,
+        "tx_broadcast_packets": -1,
+        "tx_discards": 0,
+        "tx_errors": 0,
+        "tx_multicast_packets": -1,
+        "tx_octets": 1214204,
+        "tx_unicast_packets": 5762
+    },
+    "GigabitEthernet0/1": {
+        "rx_broadcast_packets": 0,
+        "rx_discards": 0,
+        "rx_errors": 0,
+        "rx_multicast_packets": 0,
+        "rx_octets": 0,
+        "rx_unicast_packets": 0,
+        "tx_broadcast_packets": -1,
+        "tx_discards": 0,
+        "tx_errors": 0,
+        "tx_multicast_packets": -1,
+        "tx_octets": 105824,
+        "tx_unicast_packets": 1372
+    },
+    "GigabitEthernet0/2": {
+        "rx_broadcast_packets": 0,
+        "rx_discards": 0,
+        "rx_errors": 0,
+        "rx_multicast_packets": 0,
+        "rx_octets": 0,
+        "rx_unicast_packets": 0,
+        "tx_broadcast_packets": -1,
+        "tx_discards": 0,
+        "tx_errors": 0,
+        "tx_multicast_packets": -1,
+        "tx_octets": 105824,
+        "tx_unicast_packets": 1372
+    },
+    "GigabitEthernet0/3": {
+        "rx_broadcast_packets": 0,
+        "rx_discards": 0,
+        "rx_errors": 0,
+        "rx_multicast_packets": 0,
+        "rx_octets": 0,
+        "rx_unicast_packets": 0,
+        "tx_broadcast_packets": -1,
+        "tx_discards": 0,
+        "tx_errors": 0,
+        "tx_multicast_packets": -1,
+        "tx_octets": 105357,
+        "tx_unicast_packets": 1371
+    },
+    "GigabitEthernet1/0": {
+        "rx_broadcast_packets": 0,
+        "rx_discards": 0,
+        "rx_errors": 0,
+        "rx_multicast_packets": 0,
+        "rx_octets": 0,
+        "rx_unicast_packets": 0,
+        "tx_broadcast_packets": -1,
+        "tx_discards": 0,
+        "tx_errors": 0,
+        "tx_multicast_packets": -1,
+        "tx_octets": 105824,
+        "tx_unicast_packets": 1372
+    },
+    "GigabitEthernet1/1": {
+        "rx_broadcast_packets": 0,
+        "rx_discards": 0,
+        "rx_errors": 0,
+        "rx_multicast_packets": 0,
+        "rx_octets": 0,
+        "rx_unicast_packets": 0,
+        "tx_broadcast_packets": -1,
+        "tx_discards": 0,
+        "tx_errors": 0,
+        "tx_multicast_packets": -1,
+        "tx_octets": 105824,
+        "tx_unicast_packets": 1372
+    },
+    "GigabitEthernet1/2": {
+        "rx_broadcast_packets": 0,
+        "rx_discards": 0,
+        "rx_errors": 0,
+        "rx_multicast_packets": 0,
+        "rx_octets": 0,
+        "rx_unicast_packets": 0,
+        "tx_broadcast_packets": -1,
+        "tx_discards": 0,
+        "tx_errors": 0,
+        "tx_multicast_packets": -1,
+        "tx_octets": 105824,
+        "tx_unicast_packets": 1372
+    },
+    "GigabitEthernet1/3": {
+        "rx_broadcast_packets": 0,
+        "rx_discards": 0,
+        "rx_errors": 0,
+        "rx_multicast_packets": 0,
+        "rx_octets": 0,
+        "rx_unicast_packets": 0,
+        "tx_broadcast_packets": -1,
+        "tx_discards": 0,
+        "tx_errors": 0,
+        "tx_multicast_packets": -1,
+        "tx_octets": 105824,
+        "tx_unicast_packets": 1372
+    },
+    "Loopback0": {
+        "rx_broadcast_packets": 0,
+        "rx_discards": 0,
+        "rx_errors": 0,
+        "rx_multicast_packets": 0,
+        "rx_octets": 0,
+        "rx_unicast_packets": 0,
+        "tx_broadcast_packets": -1,
+        "tx_discards": 0,
+        "tx_errors": 0,
+        "tx_multicast_packets": -1,
+        "tx_octets": 0,
+        "tx_unicast_packets": 0
+    },
+    "Loopback1": {
+        "rx_broadcast_packets": 0,
+        "rx_discards": 0,
+        "rx_errors": 0,
+        "rx_multicast_packets": 0,
+        "rx_octets": 0,
+        "rx_unicast_packets": 0,
+        "tx_broadcast_packets": -1,
+        "tx_discards": 0,
+        "tx_errors": 0,
+        "tx_multicast_packets": -1,
+        "tx_octets": 0,
+        "tx_unicast_packets": 0
+    },
+    "Loopback10": {
+        "rx_broadcast_packets": 0,
+        "rx_discards": 0,
+        "rx_errors": 0,
+        "rx_multicast_packets": 0,
+        "rx_octets": 0,
+        "rx_unicast_packets": 0,
+        "tx_broadcast_packets": -1,
+        "tx_discards": 0,
+        "tx_errors": 0,
+        "tx_multicast_packets": -1,
+        "tx_octets": 0,
+        "tx_unicast_packets": 0
+    },
+    "Loopback11": {
+        "rx_broadcast_packets": 0,
+        "rx_discards": 0,
+        "rx_errors": 0,
+        "rx_multicast_packets": 0,
+        "rx_octets": 0,
+        "rx_unicast_packets": 0,
+        "tx_broadcast_packets": -1,
+        "tx_discards": 0,
+        "tx_errors": 0,
+        "tx_multicast_packets": -1,
+        "tx_octets": 0,
+        "tx_unicast_packets": 0
+    },
+    "Loopback12": {
+        "rx_broadcast_packets": 0,
+        "rx_discards": 0,
+        "rx_errors": 0,
+        "rx_multicast_packets": 0,
+        "rx_octets": 0,
+        "rx_unicast_packets": 0,
+        "tx_broadcast_packets": -1,
+        "tx_discards": 0,
+        "tx_errors": 0,
+        "tx_multicast_packets": -1,
+        "tx_octets": 0,
+        "tx_unicast_packets": 0
+    },
+    "Loopback13": {
+        "rx_broadcast_packets": 0,
+        "rx_discards": 0,
+        "rx_errors": 0,
+        "rx_multicast_packets": 0,
+        "rx_octets": 0,
+        "rx_unicast_packets": 0,
+        "tx_broadcast_packets": -1,
+        "tx_discards": 0,
+        "tx_errors": 0,
+        "tx_multicast_packets": -1,
+        "tx_octets": 0,
+        "tx_unicast_packets": 0
+    },
+    "Loopback14": {
+        "rx_broadcast_packets": 0,
+        "rx_discards": 0,
+        "rx_errors": 0,
+        "rx_multicast_packets": 0,
+        "rx_octets": 0,
+        "rx_unicast_packets": 0,
+        "tx_broadcast_packets": -1,
+        "tx_discards": 0,
+        "tx_errors": 0,
+        "tx_multicast_packets": -1,
+        "tx_octets": 0,
+        "tx_unicast_packets": 0
+    },
+    "Loopback15": {
+        "rx_broadcast_packets": 0,
+        "rx_discards": 0,
+        "rx_errors": 0,
+        "rx_multicast_packets": 0,
+        "rx_octets": 0,
+        "rx_unicast_packets": 0,
+        "tx_broadcast_packets": -1,
+        "tx_discards": 0,
+        "tx_errors": 0,
+        "tx_multicast_packets": -1,
+        "tx_octets": 0,
+        "tx_unicast_packets": 0
+    },
+    "Loopback16": {
+        "rx_broadcast_packets": 0,
+        "rx_discards": 0,
+        "rx_errors": 0,
+        "rx_multicast_packets": 0,
+        "rx_octets": 0,
+        "rx_unicast_packets": 0,
+        "tx_broadcast_packets": -1,
+        "tx_discards": 0,
+        "tx_errors": 0,
+        "tx_multicast_packets": -1,
+        "tx_octets": 0,
+        "tx_unicast_packets": 0
+    },
+    "Loopback17": {
+        "rx_broadcast_packets": 0,
+        "rx_discards": 0,
+        "rx_errors": 0,
+        "rx_multicast_packets": 0,
+        "rx_octets": 0,
+        "rx_unicast_packets": 0,
+        "tx_broadcast_packets": -1,
+        "tx_discards": 0,
+        "tx_errors": 0,
+        "tx_multicast_packets": -1,
+        "tx_octets": 0,
+        "tx_unicast_packets": 0
+    },
+    "Loopback18": {
+        "rx_broadcast_packets": 0,
+        "rx_discards": 0,
+        "rx_errors": 0,
+        "rx_multicast_packets": 0,
+        "rx_octets": 0,
+        "rx_unicast_packets": 0,
+        "tx_broadcast_packets": -1,
+        "tx_discards": 0,
+        "tx_errors": 0,
+        "tx_multicast_packets": -1,
+        "tx_octets": 0,
+        "tx_unicast_packets": 0
+    },
+    "Loopback19": {
+        "rx_broadcast_packets": 0,
+        "rx_discards": 0,
+        "rx_errors": 0,
+        "rx_multicast_packets": 0,
+        "rx_octets": 0,
+        "rx_unicast_packets": 0,
+        "tx_broadcast_packets": -1,
+        "tx_discards": 0,
+        "tx_errors": 0,
+        "tx_multicast_packets": -1,
+        "tx_octets": 0,
+        "tx_unicast_packets": 0
+    },
+    "Loopback2": {
+        "rx_broadcast_packets": 0,
+        "rx_discards": 0,
+        "rx_errors": 0,
+        "rx_multicast_packets": 0,
+        "rx_octets": 0,
+        "rx_unicast_packets": 0,
+        "tx_broadcast_packets": -1,
+        "tx_discards": 0,
+        "tx_errors": 0,
+        "tx_multicast_packets": -1,
+        "tx_octets": 0,
+        "tx_unicast_packets": 0
+    },
+    "Loopback20": {
+        "rx_broadcast_packets": 0,
+        "rx_discards": 0,
+        "rx_errors": 0,
+        "rx_multicast_packets": 0,
+        "rx_octets": 0,
+        "rx_unicast_packets": 0,
+        "tx_broadcast_packets": -1,
+        "tx_discards": 0,
+        "tx_errors": 0,
+        "tx_multicast_packets": -1,
+        "tx_octets": 0,
+        "tx_unicast_packets": 0
+    },
+    "Loopback3": {
+        "rx_broadcast_packets": 0,
+        "rx_discards": 0,
+        "rx_errors": 0,
+        "rx_multicast_packets": 0,
+        "rx_octets": 0,
+        "rx_unicast_packets": 0,
+        "tx_broadcast_packets": -1,
+        "tx_discards": 0,
+        "tx_errors": 0,
+        "tx_multicast_packets": -1,
+        "tx_octets": 0,
+        "tx_unicast_packets": 0
+    },
+    "Loopback4": {
+        "rx_broadcast_packets": 0,
+        "rx_discards": 0,
+        "rx_errors": 0,
+        "rx_multicast_packets": 0,
+        "rx_octets": 0,
+        "rx_unicast_packets": 0,
+        "tx_broadcast_packets": -1,
+        "tx_discards": 0,
+        "tx_errors": 0,
+        "tx_multicast_packets": -1,
+        "tx_octets": 0,
+        "tx_unicast_packets": 0
+    },
+    "Loopback5": {
+        "rx_broadcast_packets": 0,
+        "rx_discards": 0,
+        "rx_errors": 0,
+        "rx_multicast_packets": 0,
+        "rx_octets": 0,
+        "rx_unicast_packets": 0,
+        "tx_broadcast_packets": -1,
+        "tx_discards": 0,
+        "tx_errors": 0,
+        "tx_multicast_packets": -1,
+        "tx_octets": 0,
+        "tx_unicast_packets": 0
+    },
+    "Loopback6": {
+        "rx_broadcast_packets": 0,
+        "rx_discards": 0,
+        "rx_errors": 0,
+        "rx_multicast_packets": 0,
+        "rx_octets": 0,
+        "rx_unicast_packets": 0,
+        "tx_broadcast_packets": -1,
+        "tx_discards": 0,
+        "tx_errors": 0,
+        "tx_multicast_packets": -1,
+        "tx_octets": 0,
+        "tx_unicast_packets": 0
+    },
+    "Loopback7": {
+        "rx_broadcast_packets": 0,
+        "rx_discards": 0,
+        "rx_errors": 0,
+        "rx_multicast_packets": 0,
+        "rx_octets": 0,
+        "rx_unicast_packets": 0,
+        "tx_broadcast_packets": -1,
+        "tx_discards": 0,
+        "tx_errors": 0,
+        "tx_multicast_packets": -1,
+        "tx_octets": 0,
+        "tx_unicast_packets": 0
+    },
+    "Loopback8": {
+        "rx_broadcast_packets": 0,
+        "rx_discards": 0,
+        "rx_errors": 0,
+        "rx_multicast_packets": 0,
+        "rx_octets": 0,
+        "rx_unicast_packets": 0,
+        "tx_broadcast_packets": -1,
+        "tx_discards": 0,
+        "tx_errors": 0,
+        "tx_multicast_packets": -1,
+        "tx_octets": 0,
+        "tx_unicast_packets": 0
+    },
+    "Loopback9": {
+        "rx_broadcast_packets": 0,
+        "rx_discards": 0,
+        "rx_errors": 0,
+        "rx_multicast_packets": 0,
+        "rx_octets": 0,
+        "rx_unicast_packets": 0,
+        "tx_broadcast_packets": -1,
+        "tx_discards": 0,
+        "tx_errors": 0,
+        "tx_multicast_packets": -1,
+        "tx_octets": 0,
+        "tx_unicast_packets": 0
+    }
+}
